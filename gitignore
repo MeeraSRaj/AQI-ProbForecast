@@ -1,0 +1,44 @@
+# ── Data ──────────────────────────────────────────────
+# Raw data stays local, never commit large CSVs
+data/raw/
+data/processed/
+
+# Keep the folder structure in git
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ── Python ────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Environments ──────────────────────────────────────
+.env
+.venv/
+venv/
+env/
+ENV/
+
+# ── Jupyter ───────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ── Model checkpoints ─────────────────────────────────
+# Uncomment if model files get large
+# models/*.pt
+# models/*.pth
+# models/*.pkl
+
+# ── OS ────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
